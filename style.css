@@ -22,17 +22,33 @@ a {
   display: block;
 }
 
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+} */
+
 body {
   background-color: #f3f3f2;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   width: auto;
   margin-left: 280px;
-  padding-top: 120px;
-  padding-bottom: 120px;
   padding-right: 32px;
   padding-left: 32px;
   text-rendering: optimizeLegibility;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.main-content {
+  
+  padding-left: 62px;
+  padding-right: 62px;
+  margin-top: 62px;
+  margin-bottom: 62px;
 }
 
 
@@ -62,9 +78,40 @@ h2 {
   width: 217px;
 }
 
-.items {
+.items-container .items{
   list-style: none;
   height: 305px;
   width: 217px;
+  
+  
 }
 
+.items li a {
+  height: 35px;
+  width: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 17px;
+  font-family: 'Rubik', Arial, sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.section {
+ 
+
+}
+
+.section.landing {
+  height: 830px;
+}
+
+h1 {
+  font-size: 40px; 
+  margin-bottom: 21px;
+}
+
+.landing p {
+  font-size: 25px;
+  width: 700px;
+}
