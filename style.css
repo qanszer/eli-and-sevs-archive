@@ -6,23 +6,33 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  
 }
 
 * {
   /* outline: 2px solid pink; */
   margin: 0px;
   padding: 0px;
-
+  outline: 2px solid rebeccapurple;
 }
 
 a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
 body {
   background-color: #f3f3f2;
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: auto;
+  margin-left: 280px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 32px;
+  padding-left: 32px;
+  text-rendering: optimizeLegibility;
 }
 
 
@@ -30,48 +40,31 @@ h2 {
   color: #e16387;
 }
 
-.logo img {
-  /* margin-right: 30px; */
-  height: 50px;
-  width: 50px;
-  outline: 2px solid red;
-}
-
 .nav-container {
-  outline: 2px solid pink;
-  height: 100px;
-  padding: 10px 30px;
+  height: 100%;
+  width: 280px;
+  padding-bottom: 8px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top: 31px;
+  position: fixed;
   display: flex;
-  align-items: center;
-}
-
-.nav-box {
-  outline: 2px solid pink;
-  display: inline;
-  width: 99%;
-  padding: 10px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.justify-inbetween {
+  flex-direction: column;
   justify-content: space-between;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+
+}
+
+.logo {
+  height: 224px;
+  width: 217px;
 }
 
 .items {
-  outline: 2px solid red;
-  display: inline-block;
-  padding: 20px;
-  align-items: right;
-  margin-right: 0%;
-
+  list-style: none;
+  height: 305px;
+  width: 217px;
 }
 
-.landing {
-  height: 90vh;
-  width: auto;
-  outline: 2px solid pink;
-}
