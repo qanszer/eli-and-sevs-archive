@@ -8,5 +8,70 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  /* outline: 2px solid pink; */
+  margin: 0px;
+  padding: 0px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f3f3f2;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
+h2 {
+  color: #e16387;
+}
+
+.logo img {
+  /* margin-right: 30px; */
+  height: 50px;
+  width: 50px;
+  outline: 2px solid red;
+}
+
+.nav-container {
+  outline: 2px solid pink;
+  height: 100px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-box {
+  outline: 2px solid pink;
+  display: inline;
+  width: 99%;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-inbetween {
+  justify-content: space-between;
+}
+
+.items {
+  outline: 2px solid red;
+  display: inline-block;
+  padding: 20px;
+  align-items: right;
+  margin-right: 0%;
+
+}
+
+.landing {
+  height: 90vh;
+  width: auto;
+  outline: 2px solid pink;
+}
