@@ -167,3 +167,8 @@ h1 {
 .dances iframe {
   padding-left: 15px;
 }
+
+.section.dances .video-caption {
+  font-size: 18px;
+  margin-top: 0px;
+}
