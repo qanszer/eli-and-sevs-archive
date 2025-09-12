@@ -147,11 +147,11 @@ h1 {
   padding-bottom: 100px;
   color: #6f655f;
   font-family: 'Rubik', Arial, sans-serif;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .section p {
-  font-size: 20px;
+  font-size: 22px;
   width: 800px;
   padding-left: 15px;
   padding-bottom: 100px;
@@ -162,4 +162,8 @@ h1 {
 
 .section.birthday {
   margin-top: 500px;
+}
+
+.dances iframe {
+  padding-left: 15px;
 }
