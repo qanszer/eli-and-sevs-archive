@@ -10,9 +10,9 @@ html {
 }
 
 * {
-  /* outline: 2px solid pink; */
   margin: 0px;
   padding: 0px;
+  color: #412926;
   /* outline: 2px solid rebeccapurple; */
 }
 
@@ -62,7 +62,7 @@ h2 {
   height: 100%;
   width: 280px;
   padding-bottom: 8px;
-  padding-left: 31px;
+  padding-left: 35px;
   padding-right: 31px;
   padding-top: 31px;
   position: fixed;
@@ -71,8 +71,9 @@ h2 {
   justify-content: space-between;
   left: 0px;
   top: 0px;
-  bottom: 0px;
-
+  bottom: 0px; 
+  -webkit-box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1); 
+box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
 }
 
 .logo {
@@ -80,12 +81,15 @@ h2 {
   width: 217px;
 }
 
+.logo-img {
+  height: 150px;
+  width: 150px;
+}
+
 .items-container .items{
   list-style: none;
   height: 305px;
   width: 217px;
-  
-  
 }
 
 .items li a {
@@ -93,15 +97,28 @@ h2 {
   width: auto;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 17px;
+  font-size: 19px;
   font-family: 'Rubik', Arial, sans-serif;
   margin-top: 7px;
   margin-bottom: 7px;
+  color: #412926;
 }
 
-.section {
- 
+.socials {
+  display: inline;
+  padding-bottom: 35px;
+}
 
+.socials .socials-icon {
+  display: inline;
+  padding-right: 10px;
+  
+}
+
+.socials-icon img {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 15px;
 }
 
 .section.landing {
@@ -124,6 +141,7 @@ h1 {
   width: 700px;
   padding-left: 15px;
   padding-bottom: 100px;
+  color: #6f655f;
 }
 
 .section p {
@@ -131,4 +149,6 @@ h1 {
   width: 1100px;
   padding-left: 15px;
   padding-bottom: 100px;
+  color: #6f655f;
 }
+
