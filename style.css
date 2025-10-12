@@ -19,18 +19,16 @@ html {
 a {
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
-/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  font: inherit;
-  vertical-align: baseline;
-} */
+::selection {
+    background-color: #f0a5a5;
+    color: white;
+}
+
 
 body {
-  
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   width: auto;
@@ -41,9 +39,8 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #e8dbd0;
-  background-image: url(./assets/photos/blob-scene-haikei.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url(./assets/photos/index-bg1-v4.svg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .main-content {
@@ -56,7 +53,7 @@ body {
 
 
 h2 {
-  color: #e16387;
+  color: #f0a5a5;
 }
 
 .nav-container {
@@ -75,7 +72,7 @@ h2 {
   top: 0px;
   bottom: 0px; 
   -webkit-box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1); 
-box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
+  box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
 }
 
 .logo {
@@ -86,6 +83,7 @@ box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
 .logo-img {
   height: 150px;
   width: 150px;
+  border-radius: 15px;
 }
 
 .items-container .items{
@@ -97,13 +95,17 @@ box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
 .items li a {
   height: 35px;
   width: auto;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
   font-size: 19px;
   font-family: 'Rubik', Arial, sans-serif;
   margin-top: 7px;
   margin-bottom: 7px;
   color: #412926;
+  transition: color 0.3s;
+}
+
+.items li a:hover {
+  color: #f0a5a5;
 }
 
 .socials {
@@ -127,9 +129,9 @@ box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
   height: 830px;
 }
 
-h1 {
+.section.landing h1 {
   font-size: 50px; 
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   width: fit-content;
 }
 
@@ -155,7 +157,7 @@ h1 {
   width: 800px;
   padding-left: 15px;
   padding-bottom: 100px;
-  color: #6f655f;
+  color: #967b7b;
   font-family: 'Rubik', Arial, sans-serif;
   line-height: 2;
 }
