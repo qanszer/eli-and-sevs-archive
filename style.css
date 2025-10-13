@@ -37,7 +37,7 @@ ul {
 body {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: 280px;
-  padding: 120px 32px;
+  padding: 170px 32px;
   text-rendering: optimizeLegibility;
   background-color: #e8dbd0;
   background: url(./assets/photos/index-bg1-v4.svg) no-repeat center center fixed;
@@ -118,31 +118,10 @@ body {
 }
 
 .hover-swap:hover {
-  opacity: 0.9; /* Slight fade for smoother feel */
+  opacity: 0.9;
 }
 
 
-/* Affects All Sections Beside Nav */
-
-h2 {
-  color: #fc9f9f;
-}
-
-.section h2 {
-  font-size: 35px;
-  margin: 20px 0 70px 0;
-  padding-left: 15px;
-}
-
-.section p {
-  font-size: 19px;
-  width: 800px;
-  padding-left: 35px;
-  padding-bottom: 50px;
-  color: #6f655f;
-  font-family: 'Rubik', Arial, sans-serif;
-  line-height: 2;
-}
 
 
 /* Main Page Content All Below Here */
@@ -155,31 +134,33 @@ h2 {
 
 /* Hero Section */
 
-.first {
+.hero {
   padding-left: 62px;
   margin: 0 0 62px 0;
   display: flex;
   flex-direction: row;
 }
 
-.first {
+.hero {
   height: 830px;
 }
 
-.first h1 {
+.hero h1 {
   font-size: 50px; 
-  margin: 62px 0 100px 0;
+  margin: 62px 0 50px 0;
   width: fit-content;
 }
 
-.first h2 {
+.hero h2 {
+  color: #fc9f9f;
   font-size: 35px;
-  margin-bottom: 70px;
-  padding-left: 15px;
+  margin: 0px 0 30px 0;
+  padding: 50px 0 0 15px;
+  border-top: 4px solid #f3f3f2;
   width: 800px;
 }
 
-.first p {
+.hero p {
   font-size: 23px;
   width: 700px;
   padding-left: 15px;
@@ -216,6 +197,23 @@ h2 {
   border-radius: 15px;
 }
 
+.section h2 {
+  color: #fc9f9f;
+  font-size: 35px;
+  margin: 20px 0 70px 0;
+  padding-left: 15px;
+}
+
+.section p {
+  font-size: 19px;
+  width: 800px;
+  padding-left: 35px;
+  padding-bottom: 50px;
+  color: #6f655f;
+  font-family: 'Rubik', Arial, sans-serif;
+  line-height: 2;
+}
+
 .video {
   display: flex;
   flex-direction: row;
@@ -229,15 +227,16 @@ h2 {
   color: #f0a5a5;
 }
 
-.second.section {
+.first.section {
   margin-top: 100px;
 }
 
-.fourth iframe {
-  padding-left: 35px;
+.third iframe {
+  margin-left: 35px;
+  border-radius: 10px;
 }
 
-.fourth.section .video-caption {
+.third.section .video-caption {
   font-size: 18px;
   margin-top: 0px;
   padding-left: 35px;
@@ -249,7 +248,7 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 500px;
-  padding: 240px 100px;
+  padding: 240px 30px 0 100px;
   font-family: 'Rubik', Arial, sans-serif;
   position: sticky;
   top: 50px;
