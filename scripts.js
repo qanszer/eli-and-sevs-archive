@@ -1,17 +1,17 @@
-const images = document.querySelectorAll('.hover-swap');
+// const images = document.querySelectorAll('.hover-swap');
 
-images.forEach(img => {
-  const originalSrc = img.src;
-  const hoverSrc = img.getAttribute('data-hover');
+// images.forEach(img => {
+//   const originalSrc = img.src;
+//   const hoverSrc = img.getAttribute('data-hover');
   
-  img.addEventListener('mouseenter', () => {
-    img.src = hoverSrc;
-  });
+//   img.addEventListener('mouseenter', () => {
+//     img.src = hoverSrc;
+//   });
   
-  img.addEventListener('mouseleave', () => {
-    img.src = originalSrc;
-  });
-});
+//   img.addEventListener('mouseleave', () => {
+//     img.src = originalSrc;
+//   });
+// });
 
 
 const button = document.getElementById('logo');
