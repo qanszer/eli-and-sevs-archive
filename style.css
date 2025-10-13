@@ -46,7 +46,6 @@ body {
 	flex-direction: column;
 }
 
-
 /* Navigation Bar */
 
 .navbar .items-container a {
@@ -66,13 +65,14 @@ body {
   left: 0px;
   top: 0px;
   bottom: 0px; 
-  box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1);
+  /* box-shadow: -1px 0px 34px 15px rgba(164,164,164,0.1); */
 }
 
 .logo-img {
   height: 150px;
   width: 150px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .items-container .items{
@@ -195,6 +195,7 @@ body {
   padding: 0 80px 100px 80px;
   background-color: #f3f3f2;
   border-radius: 15px;
+  
 }
 
 .section h2 {
@@ -273,4 +274,62 @@ body {
 
 .right-scroll li:hover {
   color: #fc9f9f;
+}
+
+
+/* Dark Mode */
+
+body.dark-mode ::selection {
+    background-color: white;
+    color: #7481a0;
+}
+
+body.dark-mode * {
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #434b5e;
+}
+
+body.dark-mode {
+  background-color: #2e3440;
+  background: url(./assets/photos/darker-blob.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.dark-mode .items li a {
+  color: white;
+}
+
+body.dark-mode .items li a:hover {
+  color: #2e3440;
+}
+
+body.dark-mode .hero h2 {
+  color: #b5b1bc;
+}
+
+body.dark-mode .hero p {
+  color: #dbdbdb;
+}
+
+body.dark-mode .main .left-content {
+  background-color: #434b5e;
+}
+
+body.dark-mode .section h2 {
+  color: white;
+}
+
+body.dark-mode .section p {
+  color: #dbdbdb;
+}
+
+body.dark-mode .right-scroll .header {
+  color: #b5b1bc;
+}
+
+body.dark-mode .right-scroll li:hover {
+  color: #7481a0;
 }
