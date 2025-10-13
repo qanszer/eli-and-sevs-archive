@@ -202,14 +202,13 @@ body {
   color: #fc9f9f;
   font-size: 35px;
   margin: 20px 0 70px 0;
-  padding-left: 15px;
+  text-align: center;
 }
 
 .section p {
   font-size: 19px;
   width: 800px;
-  padding-left: 35px;
-  padding-bottom: 50px;
+  padding: 0 0px 50px 0px;
   color: #6f655f;
   font-family: 'Rubik', Arial, sans-serif;
   line-height: 2;
@@ -218,6 +217,7 @@ body {
 .video {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .video p {
