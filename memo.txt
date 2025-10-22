@@ -1,0 +1,11 @@
+MEMO LIST
+
+Features I Want To Add:
+- Add content to the other pages
+- Opening animation
+- Switch page animation
+
+Features To Fix:
+- Fix the theme problem when jumping to a different page
+- Hover effects on social icons that work on both themes
+- 
