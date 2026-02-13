@@ -232,6 +232,11 @@ body {
   margin-top: 100px;
 }
 
+.first.section p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 .third iframe {
   margin-left: 35px;
   border-radius: 10px;
