@@ -206,11 +206,65 @@ body {
 }
 
 .second-content {
-  padding: 0 80px 100px 80px;
+  padding: 90px 70px 90px 50px;
   background-color: #f3f3f2;
   border-radius: 15px;
+  margin-bottom: 10rem;
 
-  /* min-height: 50rem; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.second-content:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 40px rgba(255, 182, 217, 0.4);
+}
+
+.second-content .section.activities {
+  margin-top: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section.activities .activity-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.section.activities .activity-details h2{
+  text-align: left;
+  width: auto;
+
+  margin: 0 0 0 0;
+  padding-bottom: 35px;
+  border-bottom: 3px solid #f0a5a5;
+}
+
+.section.activities .activity-details p {
+  text-align: left;
+  width: auto;
+
+  padding: 0 0 0 0;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.second.activities .activity-details h2 {
+  border-bottom: 3px solid #412926;
+}
+
+.third.activities .activity-details h2 {
+  border-bottom: 3px solid #be332e;
+}
+
+.fourth.activities .activity-details h2 {
+  border-bottom: 3px solid #4f5659;
+}
+
+.fifth.activities .activity-details h2 {
+  border-bottom: 3px solid #4c9965;
 }
 
 .section h2 {
@@ -262,6 +316,8 @@ body {
   margin-top: 0px;
   padding-left: 35px;
 }
+
+
 
 /* Scroll Section */
 
