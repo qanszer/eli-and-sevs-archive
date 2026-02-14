@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para kay Baby Ko</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFB6D9 0%, #FFC9E3 50%, #FFFFFF 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(255, 182, 217, 0.4);
+        }
+
+        .poem-title {
+            text-align: center;
+            color: #FF69B4;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .audio-control {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .play-btn {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .play-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 20, 147, 0.4);
+        }
+
+        .poem-text {
+            line-height: 2;
+            color: #333;
+            font-size: 1.1em;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="poem-title">Para kay Baby Ko 💕</h1>
+        
+        <div class="audio-control">
+            <button class="play-btn" id="playBtn">▶️ Play Audio</button>
+        </div>
+
+        <div class="poem-text">
+[Your poem text here]
+        </div>
+    </div>
+
+    <audio id="audio" src="./Chet Baker - But Not For Me.mp3"></audio>
+
+    <script>
+        const playBtn = document.getElementById('playBtn');
+        const audio = document.getElementById('audio');
+
+        playBtn.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = '⏸️ Pause';
+            } else {
+                audio.pause();
+                playBtn.textContent = '▶️ Play Audio';
+            }
+        });
+
+        // Reset button when audio ends
+        audio.addEventListener('ended', function() {
+            playBtn.textContent = '▶️ Play Audio';
+        });
+    </script>
+</body>
+</html>

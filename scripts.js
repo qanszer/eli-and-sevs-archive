@@ -1,17 +1,17 @@
-// const images = document.querySelectorAll('.hover-swap');
+const images = document.querySelectorAll('.hover-swap');
 
-// images.forEach(img => {
-//   const originalSrc = img.src;
-//   const hoverSrc = img.getAttribute('data-hover');
+images.forEach(img => {
+  const originalSrc = img.src;
+  const hoverSrc = img.getAttribute('data-hover');
   
-//   img.addEventListener('mouseenter', () => {
-//     img.src = hoverSrc;
-//   });
+  img.addEventListener('mouseenter', () => {
+    img.src = hoverSrc;
+  });
   
-//   img.addEventListener('mouseleave', () => {
-//     img.src = originalSrc;
-//   });
-// });
+  img.addEventListener('mouseleave', () => {
+    img.src = originalSrc;
+  });
+});
 
 
 const button = document.getElementById('logo');
@@ -44,4 +44,23 @@ button.addEventListener('click', function() {
         insta.src = './assets/photos/social icons/instagram-icon.svg'
         x.src = './assets/photos/social icons/x-icon.svg'
     }
+});
+
+
+const playBtn = document.getElementById('playBtn');
+const audio = document.getElementById('audio');
+
+playBtn.addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play();
+        playBtn.src = "./assets/photos/player-pause.svg";
+    } else {
+        audio.pause();
+        playBtn.src = "./assets/photos/player-play.svg";
+    }
+});
+
+// Reset button when audio ends
+audio.addEventListener('ended', function() {
+    playBtn.src = "./assets/photos/player-play.svg";
 });
